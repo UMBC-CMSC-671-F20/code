@@ -1,0 +1,20 @@
+@relation f196
+
+@attribute credit {bad, ok, good}
+@attribute income {low, medium, high}
+@attribute debt {low, high}
+@attribute approve {yes,no}
+
+@data
+good, low, low, yes
+good, medium, low, yes
+ok, high, high, yes
+ok, high, high, yes
+ok, medium, low, yes
+ok, high, low, yes
+bad, high, low, no
+bad, medium, low, no
+ok, low, high, no
+ok, low, high, no
+ok, low, low, no
+ok, low, low, no

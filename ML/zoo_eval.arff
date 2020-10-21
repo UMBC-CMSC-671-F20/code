@@ -1,0 +1,27 @@
+   
+@RELATION zoo
+
+@ATTRIBUTE animal {anaconda,kangaroo}
+@ATTRIBUTE hair {false, true}
+@ATTRIBUTE feathers {false, true}
+@ATTRIBUTE eggs {false, true}
+@ATTRIBUTE milk {false, true}
+@ATTRIBUTE airborne {false, true}
+@ATTRIBUTE aquatic {false, true}
+@ATTRIBUTE predator {false, true}
+@ATTRIBUTE toothed {false, true}
+@ATTRIBUTE backbone {false, true}
+@ATTRIBUTE breathes {false, true}
+@ATTRIBUTE venomous {false, true}
+@ATTRIBUTE fins {false, true}
+@ATTRIBUTE legs INTEGER [0,9]
+@ATTRIBUTE tail {false, true}
+@ATTRIBUTE domestic {false, true}
+@ATTRIBUTE catsize {false, true}
+@ATTRIBUTE type { mammal, bird, reptile, fish, amphibian, insect, invertebrate }
+
+@DATA
+% Eval Instances:
+anaconda,false,false,true,false,false,false,true,true,true,true,false,false,0,true,false,false,reptile
+kangaroo,true,false,false,true,false,false,false,true,true,true,false,false,4,false,false,true,mammal
+
