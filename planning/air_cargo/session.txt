@@ -1,0 +1,55 @@
+aircargo> blackbox -o domain.pddl -f p0.pddl > session.txt
+
+blackbox version 42
+command line:  blackbox -o domain.pddl -f p0.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 10.000000  graphplan
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p0.pddl
+Problem name: pb1
+Facts loaded.
+time: 1, 14 facts and 6 exclusive pairs.
+time: 2, 16 facts and 12 exclusive pairs.
+time: 3, 18 facts and 16 exclusive pairs.
+Goals first reachable in 3 steps.
+130 nodes created.
+
+####################################################
+goals at time 4:
+  at_c1_jfk at_c2_sfo 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Sat
+Iteration was 25
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (load c1 p1 sfo)
+1 (load c2 p2 jfk)
+2 (fly p1 sfo jfk)
+2 (fly p2 jfk sfo)
+3 (unload c2 p2 sfo)
+3 (unload c1 p1 jfk)
+End plan
+----------------------------------------------------
+
+6 total actions in plan
+0 entries in hash table, 
+2 total set-creation steps (entries + hits + plan length - 1)
+6 actions tried
+
+####################################################
+Total elapsed time:   0.03 seconds
+Time in milliseconds: 26
+
+####################################################
+
+aircargo> 
+
