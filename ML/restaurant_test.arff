@@ -1,4 +1,4 @@
-% prediction arff file for R&N restaurant decision tree example
+% test arff file for R&N restaurant decision tree example
 %
 @relation restaurant
 
@@ -15,6 +15,6 @@
 @attribute WillWait  {Yes, No}
 
 @data
-No, No, No, No, None, $$$, No, No, Thai, 0-10, ?
-No, No, No, No, None, $$$, Yes, No, Burger, 10-30, ?
-No, No, No, No, None, $, Yes, No, French, 0-10, ?
+No, No, No, No, None, $$$, No, No, Thai, 0-10, No
+No, No, Yes, Yes, Full, $, Yes, No, Burger, 10-30, Yes
+Yes, No, No, No, Full, $$, Yes, No, French, 0-10, No

@@ -1,3 +1,5 @@
+% training arff file for R&N restaurant decision tree example
+%
 @relation restaurant
 
 @attribute AlternateNearby {Yes, No}
